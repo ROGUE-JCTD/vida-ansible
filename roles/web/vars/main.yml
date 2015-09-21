@@ -18,8 +18,8 @@ nginx_http_port: 80
 nginx_https_port: 443
 nginx_access_log_file: "{{ application_log_dir }}/nginx_access.log"
 nginx_error_log_file: "{{ application_log_dir }}/nginx_error.log"
-nginx_static_dir: "/var/www/firecares/static/"
-nginx_media_dir: "/var/www/firecares/media/"
+nginx_static_dir: "/var/www/vida/static/"
+nginx_media_dir: "/var/www/vida/media/"
 
 
 # Django Environment variables

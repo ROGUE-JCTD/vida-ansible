@@ -1,7 +1,7 @@
 ---
 
 # Git settings.
-# When using vagrant, symlink FireCARES vs using Git.
+# When using vagrant, symlink local development repo vs using Git.
 setup_git_repo: no
 sym_link_repo: yes
 project_source: '/{{ application_name }}' # Set to the path of the synced folder on the guest machine
@@ -56,15 +56,15 @@ broker_url: "amqp://{{ rabbitmq_application_user }}:{{ rabbitmq_application_pass
 run_django_db_migrations: yes
 run_django_collectstatic: yes
 
-add_firecares_users: yes
+add_vida_users: yes
 registration_open: True
-database_name: firecares
-database_user: firecares
+database_name: vida
+database_user: vida
 database_password: password
 database_host: localhost
 database_port: 5432
 nfirs_database_name: nfirs
-nfirs_database_user: firecares
+nfirs_database_user: vida
 nfirs_database_password: password
 nfirs_database_host: localhost
 nfirs_database_port: 5432
@@ -78,9 +78,9 @@ server_email: root@localhost
 default_from_email: webmaster@localhost
 
 
-firecares_users:
+vida_users:
   admin:
     password: 'admin'
     is_superuser: True
     is_staff: True
-    email: admin@firecares.org
+    email: geoshape.org@gmail.com
