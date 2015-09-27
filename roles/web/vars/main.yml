@@ -6,6 +6,7 @@ project_path: "{{ virtualenv_path }}/{{ project_name }}"
 application_log_dir: "{{ virtualenv_path }}/logs"
 application_log_file: "{{ application_log_dir }}/gunicorn_supervisor.log"
 requirements_file: "{{ project_path }}/requirements.txt"
+fileservice_store_dir: "{{ virtualenv_path }}/fileservice_store"
 
 
 # Gunicorn settings

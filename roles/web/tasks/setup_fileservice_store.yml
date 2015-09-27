@@ -1,0 +1,8 @@
+---
+
+- name: create the fileservice_store directory and set permissions
+  file: path={{ fileservice_store_dir }}
+        recurse=yes
+        owner={{ gunicorn_user }}
+        group={{ gunicorn_group }}
+        state=directory
