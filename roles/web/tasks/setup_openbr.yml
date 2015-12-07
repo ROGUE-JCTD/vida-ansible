@@ -1,0 +1,4 @@
+---
+
+- name: Install OpenBR/OpenCV Headers, Libraries, and Python Wrapper
+  copy: src=files/openbr/usr/ dest=/usr

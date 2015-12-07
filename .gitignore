@@ -5,3 +5,5 @@ env_vars/production.yml
 production.yml
 production-playbook.yml
 production
+
+**/.DS_Store

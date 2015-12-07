@@ -26,6 +26,9 @@
 - include: setup_fileservice_store.yml
   tags: deploy
 
+- include: setup_openbr.yml
+  tags: deploy
+
 - include: setup_nginx.yml
   tags: nginx
 
