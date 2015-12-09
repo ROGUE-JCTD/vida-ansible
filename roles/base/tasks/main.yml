@@ -39,6 +39,9 @@
     - liblapack-dev
     - libatlas-base-dev
     - gfortran
+    - qt5-default
+    - libqt5svg5-dev
+    - qtcreator
   tags: packages
 
 - name: Install virtualenv

@@ -14,6 +14,9 @@
 - include: setup_sym_linked_repo.yml
   tags: deploy
 
+- include: setup_openbr.yml
+  tags: deploy
+
 - include: setup_django_app.yml
   tags: deploy
 
@@ -24,9 +27,6 @@
   tags: deploy
 
 - include: setup_fileservice_store.yml
-  tags: deploy
-
-- include: setup_openbr.yml
   tags: deploy
 
 - include: setup_nginx.yml
