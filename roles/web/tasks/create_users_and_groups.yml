@@ -8,3 +8,11 @@
 
 - name: Add the application user to the application group
   user: name={{ gunicorn_user }} group={{ gunicorn_group }} state=present
+
+- name: Allow SSH as gunicorn_user
+  shell: echo '{{ gunicorn_user }}:{{ gunicorn_user }}' | chpasswd
+  when: development_mode
+
+- name: Do not Allow SSH as gunicorn_user
+  shell: passwd -d {{ gunicorn_user }}
+  when: not development_mode
