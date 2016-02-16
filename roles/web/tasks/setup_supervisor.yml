@@ -4,12 +4,12 @@
   template: src=supervisor_config.j2
             dest=/etc/supervisor/conf.d/{{ application_name }}.conf
             backup=yes
-  when: not development_mode
+  when: development_mode is not defined or not development_mode
 
 - name: Re-read the Supervisor config files
   supervisorctl: name={{ application_name }} state=present
-  when: not development_mode
+  when: development_mode is not defined or not development_mode
 
 - name: Restart Supervisor
   supervisorctl: name={{ application_name }} state=restarted
-  when: not development_mode
+  when: development_mode is not defined or not development_mode
