@@ -4,5 +4,4 @@
   copy: src=files/openbr/usr/ dest=/usr
 
 - name: Install OpenBR Python Wrapper
-  copy: src=files/brpy2/include/ dest=/usr/local/include/
-  copy: src=files/brpy2/lib/ dest=/webapps/vida/local/lib/python2.7/site-packages
+  copy: src=files/openbr/brpy dest=/webapps/vida/local/lib/python2.7/site-packages
