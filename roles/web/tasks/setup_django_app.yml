@@ -1,5 +1,7 @@
 ---
 
+- lineinfile: dest=/etc/profile line='export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:path-to-mysql/bin'
+
 - name: Install packages required by the Django app inside virtualenv
   pip: virtualenv={{ virtualenv_path }} requirements={{ requirements_file }}
 
@@ -50,4 +52,3 @@
   when: vida_users is defined and add_vida_users
   with_dict: "{{ vida_users|default({}) }}"
   tags: django.add_user
-

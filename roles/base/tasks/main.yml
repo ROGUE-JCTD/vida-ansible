@@ -42,7 +42,7 @@
     - qt5-default
     - libqt5svg5-dev
     - qtcreator
-    - libboost-dev-all
+    - libboost-all-dev
   tags: packages
 
 - name: Install virtualenv

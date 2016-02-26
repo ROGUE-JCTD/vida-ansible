@@ -57,3 +57,4 @@ django_environment:
   EMAIL_PORT: "{{ email_port }}"
   SERVER_EMAIL: "{{ server_email }}"
   DEFAULT_FROM_EMAIL: "{{ default_from_email }}"
+  LD_LIBRARY_PATH: "/usr/local/lib"
