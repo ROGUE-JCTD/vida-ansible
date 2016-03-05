@@ -72,3 +72,8 @@ ssl_key: |
 #aws_access_key_id: ''
 #aws_secret_access_key: ''
 #mapbox_access_token: ''
+
+# if you want to use google oath to log in (as opposed to going to serveip/admin) get the key and secret from here:
+# https://docs.google.com/document/d/1medeN3yA9Bwu9JqxQVoqCY80RbiLucrO7yrcZY6ypfE
+social_auth_google_oauth2_key: 'replace me with valid key'
+social_auth_google_oauth2_secret: 'replace me with valid secret'
