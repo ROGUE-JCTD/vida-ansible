@@ -55,3 +55,6 @@
 
 - name: copy esri extras
   copy: src=files/esri_extra.wkt dest=/usr/share/gdal/1.10 mode=0644
+
+- name: set library path
+  lineinfile: dest=/etc/profile line="export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib"
