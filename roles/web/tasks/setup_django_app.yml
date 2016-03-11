@@ -1,6 +1,6 @@
 ---
 
-- lineinfile: dest=/etc/profile line='export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:path-to-mysql/bin'
+- lineinfile: dest=/etc/profile line='export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib'
 
 - name: Install packages required by the Django app inside virtualenv
   pip: virtualenv={{ virtualenv_path }} requirements={{ requirements_file }}
