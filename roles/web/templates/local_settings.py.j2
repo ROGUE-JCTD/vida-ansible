@@ -1,4 +1,4 @@
 ALLOWED_HOSTS = {{ django_allowed_hosts|default([]) }}
 ADMINS = {{ django_admins|default(()) }}
 REGISTRATION_OPEN = {{ registration_open|default(False) }}
-LOCAL_HOST_IP = "{{ nginx_server_name }}"
+LOCAL_HOST_IP = "{{ inventory_hostname }}"
