@@ -15,9 +15,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     vb.customize ["modifyvm", :id, "--memory", "5000"]
   end
 
-  config.vm.network "forwarded_port", guest: 8888, host: 8888
-
-
   # Shared folder from the host machine to the guest machine. Uncomment the line
   # below to enable it.
   config.vm.synced_folder "../vida", "/vida", mount_options: ["dmode=777,fmode=777"]
