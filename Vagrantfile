@@ -27,7 +27,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.playbook = "vagrant.yml"
     ansible.host_key_checking = false
     ansible.verbose = "v"
-    ansible.tags = "local_settings"
     ansible.inventory_path = "vagrant_server"
     ansible.limit = "vida"
   end
