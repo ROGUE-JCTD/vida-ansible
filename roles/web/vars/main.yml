@@ -21,6 +21,7 @@ nginx_access_log_file: "{{ application_log_dir }}/nginx_access.log"
 nginx_error_log_file: "{{ application_log_dir }}/nginx_error.log"
 nginx_static_dir: "/var/www/vida/static/"
 nginx_media_dir: "/var/www/vida/media/"
+nginx_fileservice_dir: "/webapps/vida/fileservice_store/"
 
 
 # Django Environment variables

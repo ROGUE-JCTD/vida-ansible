@@ -30,6 +30,12 @@ server {
     location /media/ {
         alias   {{ nginx_media_dir }};
     }
+    
+    location /fileservice_store_internal/ {
+        # forces requests to be authorized
+        internal;
+        alias   {{ nginx_fileservice_dir }};
+    }
 
     {% if development_mode is defined and development_mode %}
     # route to the debug process
