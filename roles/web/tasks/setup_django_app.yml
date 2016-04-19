@@ -29,8 +29,6 @@
     virtualenv: "{{ virtualenv_path }}"
     settings: "{{ django_settings_file }}"
   environment: django_environment
-  environment:
-    LD_LIBRARY_PATH: "/usr/local/lib"
   when: run_django_db_migrations is defined and run_django_db_migrations
   tags: django.migrate
 
