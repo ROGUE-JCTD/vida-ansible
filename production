@@ -2,7 +2,7 @@
 env=production
 
 [webservers]
-54.172.24.222
+54.152.113.173
 
 [webservers:vars]
 ansible_ssh_user=ubuntu
