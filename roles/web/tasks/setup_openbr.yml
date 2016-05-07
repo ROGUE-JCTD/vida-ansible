@@ -1,7 +1,7 @@
 ---
 
 - name: Install OpenBR/OpenCV Headers, Libraries
-  copy: src=files/openbr/usr/ dest=/usr
+  copy: src=files/openbr/usr/ dest=/usr mode=a+rx
 
 - name: Install OpenBR Python Wrapper
   copy: src=files/openbr/brpy dest=/webapps/vida/local/lib/python2.7/site-packages
