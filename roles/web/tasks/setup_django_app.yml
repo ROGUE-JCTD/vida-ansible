@@ -11,6 +11,8 @@
 - name: write local settings
   template: src=local_settings.py.j2 dest={{virtualenv_path}}/vida/vida/settings/local_settings.py owner={{gunicorn_user}} group={{gunicorn_user}} mode=0740
 
+- name: create log file
+  copy: src=files/log/ dest=/tmp mode=a+w
 
 - name: Run the Django syncdb command
   django_manage:
@@ -52,3 +54,4 @@
   when: vida_users is defined and add_vida_users
   with_dict: "{{ vida_users|default({}) }}"
   tags: django.add_user
+
